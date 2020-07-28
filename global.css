@@ -1,0 +1,133 @@
+/* 
+
+TABLE OF CONTENTS
+
+*Variables*
+0.0 - Styling Variable Names
+
+*Consistency*
+1.0 - Demographic Neutral Browser Styling
+
+*Accessibilities*
+2.0 - Global Styling for Accessibility 
+
+*Recurring*
+
+3.0 - Global Styling 
+3.1 - Global Layout + Container (Grids)
+3.2 - Global Navigation
+3.3 - Secondary Navigation
+
+*Fonts*
+4.0 - Webfont Specific Setup
+4.1 - Typography 
+
+*ADDITIONALvariable_for_unseen*
+5.0 - 
+6.0 - 
+
+*PLAYGROUND*
+7.0 - Playground Testing 
+
+*/
+
+/* 0 */
+/* ~~~~~~~ VARIABLE DECELERATIONS ~~~~~~~ */
+
+:root { 
+    /* colors */
+    
+    /* font families */
+    
+    /* typography */
+    
+    /* media queries breakpoints */
+    --height_breakpoint-primary: 670px;
+    --width_breakpoint-primary: 724px;
+  
+    --colorAlpha: 0.5;
+  }
+
+  /* 1. */
+/* ~~~~~~~ BROWSER CONSISTENCY ~~~~~~~ */
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+html,
+body,
+noscript,
+div,
+span,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+b,
+strong,
+sub,
+sup {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: var(--font_weight-regular);
+}
+
+button,
+input {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+article,
+aside,
+footer,
+header,
+main
+nav,
+section {
+  display: block;
+}

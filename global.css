@@ -1,0 +1,176 @@
+/* ~~~~~~~ BROWSER CONSISTENCY ~~~~~~~ */
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+html,
+body,
+noscript,
+div,
+span,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+b,
+strong,
+sub,
+sup {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: var(--font_weight-regular);
+}
+
+button,
+input {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+article,
+aside,
+footer,
+header,
+main
+nav,
+section {
+  display: block;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+.root {
+    background: url("Assets/bg.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 100vh;
+    width: 100vw;
+}
+
+.root-container {
+    background-color: rgba(216, 216, 216, 0.35);
+
+    display: grid;
+
+    grid-template-columns: minmax(1rem, 6fr) 88fr minmax(1rem, 6fr);
+    grid-template-rows: 90fr 10ft;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.page-content {
+    display: grid;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    align-self: center;
+    
+
+    
+}
+
+.company-name,
+.company-services {
+    
+    justify-self: center;
+}
+
+.company-name {
+    font-size: 6rem;
+    margin-top: 9.6rem;
+}
+
+.company-services {
+    font-size: 4.8rem;
+}
+
+.page-footer {
+    display: grid;
+
+    grid-template-columns: repeat(2, 50fr);
+    grid-template-rows: 100fr;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    align-self: end;
+    margin-bottom: 3.6rem;
+}
+
+.footer-left {
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer-right {
+    justify-self: end;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
